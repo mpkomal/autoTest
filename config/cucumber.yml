@@ -1,0 +1,6 @@
+# config/cucumber.yml
+##YAML Template
+---
+default: --format pretty --tags ~@wip --tags ~@DNR_production
+production: --format pretty --tags ~@wip
+wip: --format pretty --tags @wip

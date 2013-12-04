@@ -1,0 +1,11 @@
+Before do
+  $app_host = Capybara.app_host = "http://testzillion.com"
+
+  Capybara.register_driver :selenium_chrome do |app|
+    Capybara::Selenium::Driver.new(
+      app,
+      browser: :chrome)
+      end
+
+  Capybara.default_driver = :selenium_chrome
+end

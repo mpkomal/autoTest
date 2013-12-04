@@ -1,0 +1,5 @@
+Before do
+  $app_host = Capybara.app_host = "http://testzillion.com"
+  Capybara.default_driver = :selenium
+  Capybara.default_wait_time = 10
+end

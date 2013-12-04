@@ -1,0 +1,13 @@
+Before do
+  $app_host = Capybara.app_host = "http://lrnz.dev"
+
+  Capybara.register_driver :selenium_chrome do |app|
+    Capybara::Selenium::Driver.new(
+      app,
+      browser: :safari)
+  end
+
+  # Ignore that the driver selected below says chrome.
+  Capybara.default_driver = :selenium_chrome
+  Capybara.default_wait_time = 10
+end
