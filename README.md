@@ -1,3 +1,14 @@
+=======
+autoTest
+========
+
+Basic cucumber ruby app to test remote applications
+
+
+=======
+Setup
+========
+(need to cleanup steps)
 1.) git clone repo
 2.) bundle install
 
@@ -22,3 +33,4 @@ http://www.aquafadas.com/en/documentation/sample-page/developer-apple-com-2/gene
 7.) Open the Extension Builder (Safari > Develop > Show Extension Builder)
 8.) Click "Add Extension" and locate selenium/build/javascript/safari-driver/SafariDriver.safariextension
 9.) Click Install in top right corner
+
