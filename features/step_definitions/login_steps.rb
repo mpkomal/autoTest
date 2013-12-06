@@ -24,3 +24,8 @@ Given(/^I logout$/) do
   click_link('account-toggle')
   click_link('Logout')
 end
+
+Given(/^I navigate to favorites$/) do
+  click_link('account-toggle')
+  click_link('Favorites')
+end

@@ -3,6 +3,10 @@ Given(/^I switch the subdomain to "(.*?)"$/) do |subdomain|
   Capybara.app_host = "http://#{subdomain}.#{domain}"
 end
 
+Then(/^I navigate to lesson id "(.*?)"$/) do |id|
+  visit("/lessons/#{id}")
+end
+
 # Add "I should see" statments to these
 When /^I am on the "([^"]*)" page$/ do |page_name|
   case page_name 

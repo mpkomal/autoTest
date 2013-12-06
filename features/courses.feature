@@ -25,6 +25,5 @@ Scenario: As a Teacher, I view a course on 7th grade English Language Arts
     # | 7. Identify the resolution of a story                      |
     # | 8. Analyze the structure of a story using a story mountain |
   Then I click using xpath "class" and value "resource-title"
-  Then I should see "Read-aloud video" within "div.modal-header"
+  Then I should see "Read Aloud Video" within "div.modal-header"
   Then I click using xpath "class" and value "ss-icon"
-  # Then I should not see "Read-aloud video" within "div.modal-header"

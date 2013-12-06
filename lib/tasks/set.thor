@@ -47,12 +47,9 @@ class Set < Thor
   end
 
 # PRODUCTION
-  desc "staging_safari", "Run tests on Production using Firefox"
-  def production_firefox_DNR
+  desc "production_firefox", "Run tests on production (USE cucumber -p production)"
+  def production_firefox
     copy_environment("production.FF")
-    puts "*** IMPORTANT: DO NOT RUN ALL TESTS IN PRODUCTION ***"
-    puts "*** Run the following command                     ***"
-    puts "*** cucumber -t ~@ignore                          ***"
   end
 
 end
